@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'package:water_reminder/core/constants/texts.dart';
 
 class DashboardScreen extends StatelessWidget {
@@ -26,6 +27,14 @@ class DashboardScreen extends StatelessWidget {
               Text(
                 "Tap cup to register",
                 style: Theme.of(context).textTheme.bodySmall,
+              ),
+              Container(
+                padding: const EdgeInsets.all(25),
+                height: 250,
+                child: LottieBuilder.asset(
+                  'lib/assets/animations/watercup.json',
+                  fit: BoxFit.fill,
+                ),
               ),
             ],
           ),
