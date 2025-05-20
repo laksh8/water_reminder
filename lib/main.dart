@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:water_reminder/core/theme/core_theme.dart';
 import 'package:water_reminder/ui/dashboard/dashboard_screen.dart';
 
 void main() {
@@ -12,9 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Water reminder',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-      ),
+      theme: CoreTheme.lightTheme,
       home: const DashboardScreen(),
     );
   }
